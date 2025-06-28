@@ -1,0 +1,8 @@
+23:01:36.371 [main] DEBUG Main - Debugging info - useful for development.
+23:01:36.373 [main] INFO  Main - Informational message - routine event.
+23:01:36.373 [main] WARN  Main - Warning - something unexpected might happen.
+23:01:36.374 [main] ERROR Main - Error - something failed!
+23:05:20.749 [main] DEBUG Main - Debugging info - useful for development.
+23:05:20.751 [main] INFO  Main - Informational message - routine event.
+23:05:20.751 [main] WARN  Main - Warning - something unexpected might happen.
+23:05:20.751 [main] ERROR Main - Error - something failed!
