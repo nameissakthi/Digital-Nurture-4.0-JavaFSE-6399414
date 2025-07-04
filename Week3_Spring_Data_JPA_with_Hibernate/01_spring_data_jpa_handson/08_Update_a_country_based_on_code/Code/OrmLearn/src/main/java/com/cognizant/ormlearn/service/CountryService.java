@@ -2,6 +2,7 @@ package com.cognizant.ormlearn.service;
 
 import com.cognizant.ormlearn.model.Country;
 import com.cognizant.ormlearn.repository.CountryRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ public class CountryService {
     }
 
 
+    @Transactional
     public String updateCountry(String code, String name) {
         try{
             Country country = countryRepository.findById(code).orElse(null);
