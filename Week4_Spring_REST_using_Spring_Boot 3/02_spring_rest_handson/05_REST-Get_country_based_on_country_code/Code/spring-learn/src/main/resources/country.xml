@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="countryRepo" class="com.cognizant.springlearn.repository.CountryRepository">
+        <constructor-arg>
+            <list>
+                <bean class="com.cognizant.springlearn.model.Country">
+                    <constructor-arg name="code" value="IN" />
+                    <constructor-arg name="name" value="India" />
+                </bean>
+                <bean class="com.cognizant.springlearn.model.Country">
+                    <constructor-arg name="code" value="US" />
+                    <constructor-arg name="name" value="United States" />
+                </bean>
+                <bean class="com.cognizant.springlearn.model.Country">
+                    <constructor-arg name="code" value="JP" />
+                    <constructor-arg name="name" value="Japan" />
+                </bean>
+                <bean class="com.cognizant.springlearn.model.Country">
+                    <constructor-arg name="code" value="DE" />
+                    <constructor-arg name="name" value="Germany" />
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="countryService" class="com.cognizant.springlearn.service.CountryService">
+        <constructor-arg name="countryRepository" ref="countryRepo" />
+    </bean>
+
+</beans>
