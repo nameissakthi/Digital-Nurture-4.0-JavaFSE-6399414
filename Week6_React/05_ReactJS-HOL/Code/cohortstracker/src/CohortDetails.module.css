@@ -1,0 +1,18 @@
+.box {
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+dt {
+    font-weight: 500;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
