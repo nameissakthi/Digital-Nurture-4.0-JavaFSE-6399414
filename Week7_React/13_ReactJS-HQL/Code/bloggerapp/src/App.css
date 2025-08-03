@@ -1,0 +1,32 @@
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  align-items: stretch;
+}
+
+.v1::after,
+.st2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: green;
+}
+
+.v1::after {
+  left: 250px; 
+}
+
+.st2::after {
+  left: 580px; 
+}
+
