@@ -1,0 +1,6 @@
+[submodule "Week8_Git/01_Git-HOL/gitdemo"]
+	path = Week8_Git/01_Git-HOL/gitdemo
+	url = git@gitlab.com:nameissakthi/gitdemo.git
+[submodule "Week8_Git/01_Git-HOL/Code/gitdemo"]
+	path = Week8_Git/01_Git-HOL/Code/gitdemo
+	url = git@gitlab.com:nameissakthi/gitdemo.git
